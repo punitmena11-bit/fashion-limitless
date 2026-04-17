@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMITLESS FASHION • BREAK EVERY LIMIT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        
+        .bebas { font-family: 'Bebas Neue', sans-serif; }
+        .red-glow { text-shadow: 0 0 20px #ff2d00; }
+        
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgb(255 45 0 / 0.3);
+        }
+        .overlay {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .product-card:hover .overlay {
+            opacity: 1;
+        }
+        .marquee {
+            animation: marquee 25s linear infinite;
+        }
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-white">
+
+    <!-- NAVBAR -->
+    <nav class="border-b border-white/10 bg-black/90 backdrop-blur-md fixed w-full z-50">
+        <div class="max-w-screen-2xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-[#ff2d00] rounded-full flex items-center justify-center text-xs font-bold">LF</div>
+                <h1 class="bebas text-3xl tracking-[2px]">LIMITLESS</h1>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://www.instagram.com/lim.it.less.in?igsh=MWxhZzk1YjZhOGtqYw==" target="_blank" class="px-6 py-3 border border-white/30 hover:border-[#ff2d00] text-sm bebas">IG</a>
+                <a href="https://wa.me/918103406801" target="_blank" class="bg-[#ff2d00] text-black px-8 py-3 text-sm bebas">WHATSAPP</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="min-h-screen pt-24 hero-bg flex items-center relative bg-gradient-to-b from-black to-[#1a1a1a]">
+        <div class="max-w-screen-2xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <h1 class="bebas text-[88px] md:text-[110px] leading-none tracking-[-4px] red-glow">
+                    BREAK<br>EVERY<br>LIMIT.
+                </h1>
+                <p class="text-2xl text-white/80">Breaking Boundaries with Passion</p>
+                
+                <div class="flex gap-4">
+                    <a href="#nba" class="bg-[#ff2d00] text-black px-10 py-6 bebas text-xl">SHOP NBA TEES</a>
+                    <a href="#marvel" class="border border-white/40 hover:border-[#ff2d00] px-10 py-6 bebas text-xl">SHOP MARVEL DROP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="border-t border-b border-white/10 bg-black py-4 overflow-hidden">
+        <div class="marquee flex whitespace-nowrap text-2xl bebas tracking-[4px] text-white/70">
+            BREAKING BOUNDARIES WITH PASSION &nbsp;&nbsp;&nbsp; BREAKING BOUNDARIES WITH PASSION &nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+
+    <!-- NBA TEES SECTION -->
+    <section id="nba" class="max-w-screen-2xl mx-auto px-6 py-20">
+        <h2 class="bebas text-6xl mb-12 tracking-[-2px]">NBA LEGENDS COLLECTION</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            
+            <!-- Kobe -->
+            <div class="product-card bg-white/5 rounded-3xl overflow-hidden group relative">
+                <img src="https://i.ibb.co/r2JmCzPH/Picsart-26-04-13-22-59-04-672.png" alt="Kobe" class="w-full aspect-square object-cover">
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-black/90 p-6 flex flex-col justify-end">
+                    <h3 class="bebas text-4xl">BLACK MAMBA</h3>
+                    <p class="text-white/70">Kobe Bryant • Cream • ₹699</p>
+                    <button onclick="orderNow('Kobe Black Mamba Cream Tee')" class="mt-4 bg-[#ff2d00] text-black py-4 bebas w-full">ORDER NOW</button>
+                </div>
+            </div>
+
+            <!-- Kyrie -->
+            <div class="product-card bg-white/5 rounded-3xl overflow-hidden group relative">
+                <img src="https://i.ibb.co/d4rtN2RL/IMG-20260409-164410.jpg" alt="Kyrie" class="w-full aspect-square object-cover">
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-black/90 p-6 flex flex-col justify-end">
+                    <h3 class="bebas text-4xl">KAI 11</h3>
+                    <p class="text-white/70">Uncle Drew • Navy • ₹699</p>
+                    <button onclick="orderNow('Kyrie Uncle Drew Navy Tee')" class="mt-4 bg-[#ff2d00] text-black py-4 bebas w-full">ORDER NOW</button>
+                </div>
+            </div>
+
+            <!-- Jordan -->
+            <div class="product-card bg-white/5 rounded-3xl overflow-hidden group relative">
+                <img src="https://i.ibb.co/yFsnQZVp/Picsart-26-04-10-23-19-29-304.jpg" alt="Jordan" class="w-full aspect-square object-cover">
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-black/90 p-6 flex flex-col justify-end">
+                    <h3 class="bebas text-4xl">CHICAGO 23</h3>
+                    <p class="text-white/70">Michael Jordan • Cream • ₹699</p>
+                    <button onclick="orderNow('Jordan Chicago Bulls Cream Tee')" class="mt-4 bg-[#ff2d00] text-black py-4 bebas w-full">ORDER NOW</button>
+                </div>
+            </div>
+
+            <!-- Curry -->
+            <div class="product-card bg-white/5 rounded-3xl overflow-hidden group relative">
+                <img src="https://i.ibb.co/5WDzCmY2/Picsart-26-04-09-20-39-57-628.jpg" alt="Curry" class="w-full aspect-square object-cover">
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-black/90 p-6 flex flex-col justify-end">
+                    <h3 class="bebas text-4xl">CURRY 30</h3>
+                    <p class="text-white/70">Golden State • Black • ₹699</p>
+                    <button onclick="orderNow('Curry Golden State Black Tee')" class="mt-4 bg-[#ff2d00] text-black py-4 bebas w-full">ORDER NOW</button>
+                </div>
+            </div>
+
+            <!-- Ja Morant -->
+            <div class="product-card bg-white/5 rounded-3xl overflow-hidden group relative">
+                <img src="https://i.ibb.co/5XVSqhmQ/Picsart-26-04-09-13-33-43-690.jpg" alt="Ja" class="w-full aspect-square object-cover">
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-black/90 p-6 flex flex-col justify-end">
+                    <h3 class="bebas text-4xl">GRIZZLIES JA</h3>
+                    <p class="text-white/70">Ja Morant • Lavender • ₹699</p>
+                    <button onclick="orderNow('Ja Morant Grizzlies Lavender Tee')" class="mt-4 bg-[#ff2d00] text-black py-4 bebas w-full">ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARVEL TEES SECTION -->
+    <section id="marvel" class="max-w-screen-2xl mx-auto px-6 py-20 bg-black/50">
+        <h2 class="bebas text-6xl mb-12 tracking-[-2px]">MARVEL DROP • MILES MORALES</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+            
+            <!-- Spider Navy -->
+            <div class="product-card bg-white/5 rounded-3xl overflow-hidden group relative">
+                <img src="https://i.ibb.co/VYRRXLCN/IMG-20260408-191350.jpg" alt="Miles Navy" class="w-full aspect-square object-cover">
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-black/90 p-6 flex flex-col justify-end">
+                    <h3 class="bebas text-4xl">MILES MORALES</h3>
+                    <p class="text-white/70">Navy Tie-Dye • ₹699</p>
+                    <button onclick="orderNow('Miles Morales Navy Tie-Dye Tee')" class="mt-4 bg-[#ff2d00] text-black py-4 bebas w-full">ORDER NOW</button>
+                </div>
+            </div>
+
+            <!-- Spider Maroon -->
+            <div class="product-card bg-white/5 rounded-3xl overflow-hidden group relative">
+                <img src="https://i.ibb.co/cS45X7Rb/IMG-20260408-191326.jpg" alt="Miles Maroon" class="w-full aspect-square object-cover">
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-black/90 p-6 flex flex-col justify-end">
+                    <h3 class="bebas text-4xl">MILES MORALES</h3>
+                    <p class="text-white/70">Maroon Tie-Dye • ₹699</p>
+                    <button onclick="orderNow('Miles Morales Maroon Tie-Dye Tee')" class="mt-4 bg-[#ff2d00] text-black py-4 bebas w-full">ORDER NOW</button>
+                </div>
+            </div>
+
+            <!-- Spider Green -->
+            <div class="product-card bg-white/5 rounded-3xl overflow-hidden group relative">
+                <img src="https://i.ibb.co/ksynxVCv/IMG-20260408-191245.jpg" alt="Miles Green" class="w-full aspect-square object-cover">
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-black/90 p-6 flex flex-col justify-end">
+                    <h3 class="bebas text-4xl">MILES MORALES</h3>
+                    <p class="text-white/70">Green Tie-Dye • ₹699</p>
+                    <button onclick="orderNow('Miles Morales Green Tie-Dye Tee')" class="mt-4 bg-[#ff2d00] text-black py-4 bebas w-full">ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-6 text-center">
+            <p class="bebas text-2xl">LIMITLESS FASHION</p>
+            <p class="text-white/50 mt-2">Breaking Boundaries with Passion © 2026</p>
+            <p class="text-xs text-white/30 mt-8">Powered by Qikink • All products made on demand</p>
+        </div>
+    </footer>
+
+    <script>
+        function orderNow(productName) {
+            const phone = "918103406801"; //
+            const message = `Hey! I want to buy the ${productName} at ₹699. Please confirm size and availability.`;
+            window.open(`https://wa.me/\( {phone}?text= \){encodeURIComponent(message)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
